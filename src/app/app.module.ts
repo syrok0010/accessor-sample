@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {CustomFormComponent} from "./custom-form.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {CustomFormInnerComponent} from "./custom-form-inner.component";
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,7 +12,6 @@ import {CustomFormInnerComponent} from "./custom-form-inner.component";
     CustomFormComponent,
     ReactiveFormsModule,
     FormsModule,
-    CustomFormInnerComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
