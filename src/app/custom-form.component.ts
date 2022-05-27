@@ -1,5 +1,6 @@
 import {Component, forwardRef} from '@angular/core';
 import {ControlValueAccessor, FormControl, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule} from "@angular/forms";
+import {CustomFormInnerComponent} from './custom-form-inner.component';
 
 @Component({
   selector: 'app-custom-form',
@@ -16,7 +17,7 @@ import {ControlValueAccessor, FormControl, FormsModule, NG_VALUE_ACCESSOR, React
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    FormsModule
+    CustomFormInnerComponent
   ]
 })
 export class CustomFormComponent implements ControlValueAccessor {
